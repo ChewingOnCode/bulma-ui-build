@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ninja Coffee</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Ninja Coffee</title>
 </head>
 
 <body>
@@ -12,7 +14,7 @@
     <!-- Logo Brand -->
     <div class="navbar-brand">
       <a class="navbar-item">
-        <img src="/assets/logo.png" alt="site logo" style="max-height:70px" class="py-2 px-2">
+        <img src="/assets/logo.png" alt="site logo" class="logo py-2 px-2">
       </a>
       <a class="navbar-burger" id="burger">
         <span></span>
@@ -40,23 +42,58 @@
   <!-- Product Information -->
   <section class="section">
     <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column is-3">
-          <h1 class="is-size-1 title">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-6-tablet is-3-desktop">
+          <h1 class="is-size-3-mobile is-size-1-desktop title">
             Docker
           </h1>
-          <h2 class="is-size-2 subtitle">Dark Roast</h2>
+          <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut in eius accusamus dicta eos tempora quasi
             ducimus temporibus libero error!</p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
           <img src="/assets/product.png" alt="Docker Dark Roast Coffee Image" class="px-6">
         </div>
-        <div class="column is-4">
+        <div class="column is-12-tablet is-4-desktop">
           <div class="is-size-4 mb-4">
             $10.95
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugit.</p>
           </div>
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+        <div class="column is-7-tablet">
+          <!-- Tabbed Content -->
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active" data-target="product-details"><a>Product Details</a></li>
+              <li data-target="delivery-information"><a>Delivery Information</a></li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="product-details">
+              <h3 class="is-size-5 title">Product Details</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptas explicabo nesciunt iusto, at
+                dolore laborum porro minus? Iusto reprehenderit iste quod cupiditate ducimus, eos natus laborum eveniet
+                tempore sapiente?</p>
+            </div>
+            <div id="delivery-information" class="is-hidden">
+              <h3 class="is-size-5 title">Delivery Information</h3>
+              <p>This is delivery information. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptas
+                explicabo nesciunt iusto, at
+                dolore laborum porro minus? Iusto reprehenderit iste quod cupiditate ducimus, eos natus laborum eveniet
+                tempore sapiente?</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5-tablet">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse at, nesciunt beatae possimus tenetur
+            minima fuga maxime exercitationem quaerat dolorum odit veniam blanditiis incidunt atque similique, amet
+            asperiores saepe.</p>
         </div>
       </div>
     </div>
